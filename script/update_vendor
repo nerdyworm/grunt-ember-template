@@ -1,0 +1,8 @@
+#!/bin/bash
+
+set -e
+
+wget -O vendor/js/jquery.js http://code.jquery.com/jquery-2.0.0.js
+wget -O vendor/js/handlebars.js http://builds.emberjs.com.s3.amazonaws.com/handlebars-1.0.0-rc.3.js
+wget -O vendor/js/ember.js http://builds.emberjs.com.s3.amazonaws.com/ember-latest.js
+wget -O vendor/js/ember-data.js http://builds.emberjs.com.s3.amazonaws.com/ember-data-latest.js

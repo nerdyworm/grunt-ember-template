@@ -1,0 +1,17 @@
+#!/bin/bash
+
+set -e
+
+function build() {
+  grunt build
+}
+
+function deploy() {
+  rsync -avze 'ssh' --delete dist/ user@example.com:/path/to/www/
+}
+
+function main() {
+  build && deploy
+}
+
+main
