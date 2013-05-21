@@ -1,4 +1,4 @@
-// Last commit: 76b93ba (2013-05-16 10:35:14 -0700)
+// Last commit: eb9098a (2013-05-20 14:17:16 -0700)
 
 
 (function() {
@@ -8113,7 +8113,7 @@ DS.FixtureSerializer = DS.Serializer.extend({
 
   extractBelongsTo: function(type, hash, key) {
     var val = hash[key];
-    if (val !== null && val !== undefined) {
+    if (val != null) {
       val = val + '';
     }
     return val;
